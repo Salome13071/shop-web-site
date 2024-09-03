@@ -831,6 +831,10 @@ button {
   .subscribe-box__title {
     font-size: 24px;
     padding: 22px 59px;
+    text-align: center;
+  }
+  .offers__btn {
+    padding: 10px 0;
   }
   .footer--social--two {
     grid-template-columns: 1fr 1fr;
@@ -855,6 +859,15 @@ button {
   }
   .latest {
     display: none;
+  }
+
+  .view--button {
+    width: 358px;
+    padding: 10px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
