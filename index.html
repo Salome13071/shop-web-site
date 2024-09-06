@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Shop.co</title>
   </head>
   <body>
@@ -305,16 +310,13 @@
           </div>
         </div>
       </section>
-      <section class="costumers">
-        <div class="costumer--box__head">
-          <div><h3 class="costumers__title">OUR HAPPY COSTUMERS</h3></div>
-          <div class="costumers__arrows">
-            <img src="./images/arrow1.svg" alt="arrow" />
-            <img src="./images/arrow2.svg" alt="arrow" />
-          </div>
-        </div>
-        <div class="costumers--card--box">
-          <div class="costumers--card">
+
+      <!--   დავამატე swiper მომხმარებლების შეფასებაზე  -->
+
+      <div class="swiper mySwiper">
+        <h3 class="costumers__title">OUR HAPPY COSTUMERS</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <img src="./images/stars.svg" class="card--img" alt="stars" />
             <div class="costumers--card--name">
               <h4>Sarah M.</h4>
@@ -326,7 +328,7 @@
               I've bought has exceeded my expectations.”
             </p>
           </div>
-          <div class="costumers--card box1">
+          <div class="swiper-slide">
             <img src="./images/stars.svg" class="card--img" alt="stars" />
             <div class="costumers--card--name">
               <h4>Alex K.</h4>
@@ -339,7 +341,7 @@
               occasions.”
             </p>
           </div>
-          <div class="costumers--card box2">
+          <div class="swiper-slide">
             <img src="./images/stars.svg" class="card--img" alt="stars" />
             <div class="costumers--card--name">
               <h4>James L.</h4>
@@ -352,8 +354,86 @@
               trends.”
             </p>
           </div>
+          <div class="swiper-slide">
+            <img src="./images/stars.svg" class="card--img" alt="stars" />
+            <div class="costumers--card--name">
+              <h4>James L.</h4>
+              <img src="./images/green-done.svg" alt="done" />
+            </div>
+            <p class="costumers--card--p">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/stars.svg" class="card--img" alt="stars" />
+            <div class="costumers--card--name">
+              <h4>James L.</h4>
+              <img src="./images/green-done.svg" alt="done" />
+            </div>
+            <p class="costumers--card--p">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/stars.svg" class="card--img" alt="stars" />
+            <div class="costumers--card--name">
+              <h4>Anna Blank</h4>
+              <img src="./images/green-done.svg" alt="done" />
+            </div>
+            <p class="costumers--card--p">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/stars.svg" class="card--img" alt="stars" />
+            <div class="costumers--card--name">
+              <h4>Meth Parr.</h4>
+              <img src="./images/green-done.svg" alt="done" />
+            </div>
+            <p class="costumers--card--p">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/stars.svg" class="card--img" alt="stars" />
+            <div class="costumers--card--name">
+              <h4>David Blank</h4>
+              <img src="./images/green-done.svg" alt="done" />
+            </div>
+            <p class="costumers--card--p">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. ”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/stars.svg" class="card--img" alt="stars" />
+            <div class="costumers--card--name">
+              <h4>George A.</h4>
+              <img src="./images/green-done.svg" alt="done" />
+            </div>
+            <p class="costumers--card--p">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
         </div>
-      </section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </main>
     <footer class="footer">
       <section class="subscribe">
@@ -439,6 +519,41 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // const morning = "morning";
+      // const afternon = "afternoon";
+      // const night = "night";
+      // const evening = "eventing";
+      // const timeOfDay = "afternoon";
+      // switch (true) {
+      //   case timeOfDay === morning || timeOfDay === afternon:
+      //     console.log("Good day!");
+      //     break;
+      //   case timeOfDay === evening || timeOfDay === night:
+      //     console.log("Good evening!");
+      //     break;
+      //   default:
+      //     console.log("hello!");
+      // }
+
+      // switch (timeOfDay) {
+      //   case morning:
+      //     console.log("Good morning!");
+      //     break;
+      //   case afternon:
+      //     console.log("Good afternoon!");
+      //     break;
+      //   case night:
+      //     console.log("Good night!");
+      //     break;
+      //   case evening:
+      //     console.log("Good evening!");
+      //     break;
+      //   default:
+      //     console.log("hello!");
+      // }
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

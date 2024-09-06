@@ -461,11 +461,15 @@ button {
   font-family: integral;
   font-size: 48px;
   font-weight: bold;
+  padding-bottom: 40px;
+  padding-top: 30px;
 }
 
 .costumers__arrows {
   display: flex;
   gap: 16px;
+  position: absolute;
+  right: 80px;
 }
 
 .costumers--card {
@@ -498,7 +502,10 @@ button {
   font-family: satoshi;
   font-size: 16px;
   line-height: 22px;
+  text-align: start;
 }
+
+/*  subscripe part  */
 .subscribe {
   max-width: 1240px;
   margin: auto;
@@ -922,14 +929,13 @@ button {
   .text__main--header {
     font-size: 36px;
   }
-  /* .home__button {
-    max-width: 262px;
-  } */
+
   .produts-items--title {
     font-size: 24px;
   }
   .costumers__title {
     font-size: 22px;
+    padding-left: 20px;
   }
   .home__number {
     gap: 8px;

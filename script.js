@@ -20,3 +20,23 @@ document.addEventListener("click", function (event) {
     menu.classList.remove("active");
   }
 });
+
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
